@@ -19,22 +19,4 @@
     <link href="~/stylesheet.css" rel="stylesheet" />
 </head>
 <body>
-    <h1 class="margin-left">Weather</h1>
-    <div class="margin-top-200">
-        @foreach(var item in Model)
-        {
-            <div class="box inline-block margin-left @GetColorByTemperature(item.TemperatureFahrenheit)" >
-                <div class="inline-block w-50">
-                    <h2>@item.CityName</h2>
-                        <h4 class="text-dark-grey">@Views__ViewImports.GetTime(item.DateAndTime)</h4>
-                    <a class="margin-top" href="~/weather/@item.CityUniqueCode">Details</a>
-                </div>
-                <div class="inline-block padding-left-45 border-left">
-                    <h2>@item.TemperatureFahrenheit <sup class="text-grey"><sup>o</sup>F</sup></h2>
-                    <br>
-                    <br>
-                </div>
-            </div>
-        }
-    </div>
 </body>
