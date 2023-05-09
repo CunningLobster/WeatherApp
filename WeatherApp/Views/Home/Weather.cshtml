@@ -7,4 +7,17 @@
     <link href="~/stylesheet.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="w-25">
+        <div>
+            <div class="inline-block w-50">
+                <h2>@Model.CityName</h2>
+                <h4 class=" text-dark-grey">@Views__ViewImports.GetTime(Model.DateAndTime)</h4>
+            </div>
+            <div class="border-left inline-block padding-left-45">
+                <h2 class="text-dark-grey">@Model.TemperatureFahrenheit <sup><sup>o</sup>F</sup></h2>
+                <br/><br/>
+            </div>
+        </div>
+    </div>
+    <a href="/">Back To The Home Page</a>
 </body>
