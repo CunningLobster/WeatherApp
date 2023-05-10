@@ -21,7 +21,7 @@
 <body>
     @foreach (var item in Model)
     {
-        <div class="w-25 @GetColorByTemperature(item.TemperatureFahrenheit)">
+        <div class="w-30 box @GetColorByTemperature(item.TemperatureFahrenheit) margin-left cursor-pointer">
             <div class="inline-block w-50">
                 <h2>@item.CityName</h2>
                 <h4 class=" text-dark-grey">@Views__ViewImports.GetTime(item.DateAndTime)</h4>
