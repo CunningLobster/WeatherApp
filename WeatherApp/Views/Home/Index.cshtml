@@ -7,6 +7,5 @@
     <link href="~/stylesheet.css" rel="stylesheet" />
 </head>
 <body>
-    @*<partial name="_WeatherListPartial" model="@Model"></partial>*@
-    @await Html.PartialAsync("_WeatherListPartial", Model);
+    @await Component.InvokeAsync("WeatherList", Model)
 </body>
