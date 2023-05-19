@@ -1,4 +1,4 @@
-﻿@model List<CityWeather>
+﻿@model IEnumerable<CityWeather>
 
 @{
     string GetColorByTemperature(int temperature)
@@ -17,7 +17,7 @@
     <div class="w-30 box @GetColorByTemperature(item.TemperatureFahrenheit) margin-left cursor-pointer">
         <div class="inline-block w-50">
             <h2>@item.CityName</h2>
-            <h4 class=" text-dark-grey">@Views__ViewImports.GetTime(item.DateAndTime)</h4>
+            <h4 class=" text-dark-grey">@item.GetTime()</h4>
             <div class="margin-top">
                 <a href="weather/@item.CityUniqueCode">Details</a>
             </div>

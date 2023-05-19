@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WeatherApp.Models;
+using ServiceContracts.Models;
 
 namespace WeatherApp.ViewComponents
 {

@@ -1,16 +1,2 @@
 ﻿@*@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"*@
-@using WeatherApp.Models
-
-@functions{
-    public static string GetTime(DateTime date)
-    {
-        string dayPart = date.Hour < 12 ? "AM" : "PM";
-        return $"{date:hh}:{date:mm} {dayPart}";
-    }
-
-    public static string GetDayMonthYear(DateTime date)
-    {
-        return $"{date:dd} {date.ToString("MMM")} {date:yyyy}";
-    }
-
-}
+@using ServiceContracts.Models
